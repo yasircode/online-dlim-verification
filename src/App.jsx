@@ -24,7 +24,7 @@ const LicensePortal = () => {
       licenceNo: "SL-25-236501",
       dob: "27-May-2001",
       CNIC: "42401-3822570-1",
-      height: "5' 3\"",
+      height: "5' 5\"",
       address: "Post Office Panjgariya Bajwa, Bagowali, Tehsil Pasrur, District Sialkot",
       issueDate: "23-6-2025",
       expiryDate: "23-6-2027",
