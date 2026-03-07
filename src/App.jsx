@@ -9,6 +9,7 @@ const LicensePortal = () => {
   const handleVerify = () => {
     // Sirf is specific CNIC ko allow karne ke liye condition
     const allowedCNIC = "4240138225701";
+   
 
     if (cnic !== allowedCNIC) {
       alert("Record Not Found! Please enter the correct CNIC.");
@@ -25,6 +26,7 @@ const LicensePortal = () => {
       dob: "27-May-2001",
       CNIC: "42401-3822570-1",
       height: "5' 5\"",
+      BloodGroup:"O Postive",
       address: "Post Office Panjgariya Bajwa, Bagowali, Tehsil Pasrur, District Sialkot",
       issueDate: "23-6-2025",
       expiryDate: "23-6-2027",
@@ -106,6 +108,7 @@ const LicensePortal = () => {
                 <DetailItem label="FATHER NAME" value={userData.father} />
                 <DetailItem label="LICENCE NO" value={userData.licenceNo} />
                 <DetailItem label="DATE OF BIRTH" value={userData.dob} />
+                <DetailItem label="Blood Group" value={userData.BloodGroup} />
                 <DetailItem label="CNIC" value={userData.CNIC} />
                 <DetailItem label="HEIGHT" value={userData.height} />
                 <DetailItem label="ISSUE DATE" value={userData.issueDate} />
