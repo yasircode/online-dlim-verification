@@ -64,7 +64,7 @@ const LicensePortal = () => {
         <div className="flex flex-col md:flex-row gap-2">
           <input 
             type="text" 
-            placeholder="Enter CNIC (e.g. Valid Cnic)" 
+            placeholder="Enter CNIC Without dashes (e.g. Valid Cnic)" 
             className="flex-1 p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#006633]"
             value={cnic}
             onChange={(e) => setCnic(e.target.value)}
