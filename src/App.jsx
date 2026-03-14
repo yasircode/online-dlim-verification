@@ -21,7 +21,8 @@ const LicensePortal = () => {
       name: "Usman Waris",
       father: "Waris Ali",
       licenceNo: "SL-25-236501",
-      dob: "10-12-1999",
+      dob: "27-05-2001",
+      BloodGroup: "0 postive",
       CNIC: "42401-3822570-1",
       height: "5' 5\"",
       address: "Post Office Panjgariya Bajwa, Bagowali, Tehsil Pasrur, District Sialkot",
@@ -105,6 +106,7 @@ const LicensePortal = () => {
                 <DetailItem label="FATHER NAME" value={userData.father} />
                 <DetailItem label="LICENCE NO" value={userData.licenceNo} />
                 <DetailItem label="DATE OF BIRTH" value={userData.dob} />
+                <DetailItem label="Blood Group" value={userData.BloodGroup} />
                 <DetailItem label="CNIC" value={userData.CNIC} />
                 <DetailItem label="HEIGHT" value={userData.height} />
                 <DetailItem label="ISSUE DATE" value={userData.issueDate} />
