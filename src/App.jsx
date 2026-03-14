@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import myProfilePhoto from '/usman.jpeg'; // Ensure this path is correct
+import myProfilePhoto from '/malik.png'; // Ensure this path is correct
 
 const LicensePortal = () => {
   const [cnic, setCnic] = useState('');
@@ -8,7 +8,7 @@ const LicensePortal = () => {
 
   const handleVerify = () => {
     // Sirf is specific CNIC ko allow karne ke liye condition
-    const allowedCNIC = "3450255147843";
+    const allowedCNIC = "4240138225701";
 
     if (cnic !== allowedCNIC) {
       alert("Record Not Found! Please enter the correct CNIC.");
@@ -18,15 +18,15 @@ const LicensePortal = () => {
 
     // Agar number match kar gaya, to ye data show hoga
     setUserData({
-      name: "Usman Ali",
-      father: "Bashir Ahmed",
-      licenceNo: "PJ-25-413560",
-      dob: "01-01-2002",
-      CNIC: "3450255147843",
+      name: "Usman Waris",
+      father: "Waris Ali",
+      licenceNo: "SL-25-236501",
+      dob: "10-12-1999",
+      CNIC: "42401-3822570-1",
       height: "5' 5\"",
-      address: "MOHALLAH ABADI YOUSAF PARK,LAHORE",
-      issueDate: "10-5-2022",
-      expiryDate: "10-05-2027",
+      address: "Post Office Panjgariya Bajwa, Bagowali, Tehsil Pasrur, District Sialkot",
+      issueDate: "23-6-2022",
+      expiryDate: "23-6-2027",
       photo: myProfilePhoto,
       allowedVehicles: ["Motorbike", "Car", "Jeep"] 
     });
