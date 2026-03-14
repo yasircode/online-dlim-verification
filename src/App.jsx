@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import myProfilePhoto from '/malik.png'; // Ensure this path is correct
+import myProfilePhoto from '/mike.jpg'; // Ensure this path is correct
 
 const LicensePortal = () => {
   const [cnic, setCnic] = useState('');
