@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import myProfilePhoto from './assets/mike.jpg'; // Ensure this path is correct
+import myProfilePhoto from '/usman.jpeg'; // Ensure this path is correct
 
 const LicensePortal = () => {
   const [cnic, setCnic] = useState('');
@@ -8,8 +8,7 @@ const LicensePortal = () => {
 
   const handleVerify = () => {
     // Sirf is specific CNIC ko allow karne ke liye condition
-    const allowedCNIC = "4240138225701";
-   
+    const allowedCNIC = "3450255147843";
 
     if (cnic !== allowedCNIC) {
       alert("Record Not Found! Please enter the correct CNIC.");
@@ -19,17 +18,15 @@ const LicensePortal = () => {
 
     // Agar number match kar gaya, to ye data show hoga
     setUserData({
-      name: "Usman  Waris",
-
-      father: "Waris Ali",
-      licenceNo: "SL-25-236501",
-      dob: "27-May-2001",
-      CNIC: "42401-3822570-1",
+      name: "Usman Ali",
+      father: "Bashir Ahmed",
+      licenceNo: "PJ-25-413560",
+      dob: "01-01-2002",
+      CNIC: "3450255147843",
       height: "5' 5\"",
-      BloodGroup:"O Postive",
-      address: "Post Office Panjgariya Bajwa, Bagowali, Tehsil Pasrur, District Sialkot",
-      issueDate: "23-6-2025",
-      expiryDate: "23-6-2027",
+      address: "MOHALLAH ABADI YOUSAF PARK,LAHORE",
+      issueDate: "10-5-2022",
+      expiryDate: "10-05-2027",
       photo: myProfilePhoto,
       allowedVehicles: ["Motorbike", "Car", "Jeep"] 
     });
@@ -64,7 +61,7 @@ const LicensePortal = () => {
         <div className="flex flex-col md:flex-row gap-2">
           <input 
             type="text" 
-            placeholder="Enter CNIC Without dashes (e.g. Valid Cnic)" 
+            placeholder="Enter CNIC (e.g. Valid Cnic)" 
             className="flex-1 p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#006633]"
             value={cnic}
             onChange={(e) => setCnic(e.target.value)}
@@ -108,7 +105,6 @@ const LicensePortal = () => {
                 <DetailItem label="FATHER NAME" value={userData.father} />
                 <DetailItem label="LICENCE NO" value={userData.licenceNo} />
                 <DetailItem label="DATE OF BIRTH" value={userData.dob} />
-                <DetailItem label="Blood Group" value={userData.BloodGroup} />
                 <DetailItem label="CNIC" value={userData.CNIC} />
                 <DetailItem label="HEIGHT" value={userData.height} />
                 <DetailItem label="ISSUE DATE" value={userData.issueDate} />
